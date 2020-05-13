@@ -146,7 +146,12 @@ Route::group(['prefix' => 'login'], function(){
 Route::get('/', 'Site@index');
 Route::group(['prefix' => 'site'], function(){
         Route::get('/', 'Site@index');
+        Route::any('/test', 'Site@test');
 });
 
+Route::group(['prefix' => '/registro'], function(){
+    Route::get('/', 'Registro@registro');
+    Route::post('/', 'Registro@insertarRegistro');    
+});
 
 Route::fallback('Login@error404');

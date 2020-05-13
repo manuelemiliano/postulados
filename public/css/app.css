@@ -305,3 +305,9 @@ padding-top: 5px;
 .m-link.m-link--focus {
     color: #691a30;
 }
+
+.btn-focus {
+    color: #fff;
+    background-color: #a02c4f;
+    border-color: #a02c4f;
+}
